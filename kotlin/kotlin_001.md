@@ -8,7 +8,7 @@
 > 用户自定义类加载器，是通过继承java.lang.ClassLoader类的方式来来实现自己的类加载器
 > 
 ##### 1.3 类加载器子系统
-- 加载：查找并加载Class文件
+- 加载：查找并加载Class文件，然后保存到方法区
 - 链接：验证、准备以及解析
 > 验证：确保被导入类型的正确性
 > 准备：为类的静态字段分配字段，并用默认值初始化这些字段
@@ -30,6 +30,5 @@
 - PathClassLoader：通常用来加载已经安装的apk的dex文件（安装的apk的dex文件会存储在/data/dalvik-cache中）
 - DexClassLoader：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjI5NTM5NDEsLTE4MzkwMTU1NTldfQ
-==
+eyJoaXN0b3J5IjpbMTEzNjYzNDYyNiwtMTgzOTAxNTU1OV19
 -->
