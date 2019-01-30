@@ -1,19 +1,19 @@
 #  Android组件化与热修复
 #### 1. Java中的类加载器
 ##### 1.1 系统类加载
-- 引导类加载器（Bootstrap ClassLoader）：用C/C++代码实现，用于加载指定的JDK核心库
-- 拓展类加载器（Extensions ClassLoader）：用于加载Java的拓展类
+- 引导类加载器（Bootstrap ClassLoader）：用C/C++代码实现，用于加载指定的JDK核心库，JAVA_HOME/jre/lib
+- 拓展类加载器（Extensions ClassLoader）：用于加载Java的拓展类, JAVA_HOME/jre/lib/ext
 - 应用类加载器（Application ClassLoader）：又称作系统类加载器
 ##### 1.2 自定义类加载器
 > 用户自定义类加载器，是通过继承java.lang.ClassLoader类的方式来来实现自己的类加载器
 > 
 ##### 1.3 类加载器子系统
-- 加载：查找并加载Class文件，然后保存到方法区
+- 加载：查找并加载Class文件，然后保存到方法区，并且在Java堆内存中会创建一个Class对象来代表这个.class文件
 - 链接：验证、准备以及解析
 > 验证：确保被导入类型的正确性
-> 准备：为类的静态字段分配字段，并用默认值初始化这些字段
-> 解析：根据运行时常量池的符号引用来动态决定具体执行过程
-- 初始化：将类变量初始化为正确初始值
+> 准备：为类的静态字段分配字段
+> 解析：根据运行时常量池的符号引用来动态决定具体执行过程，符号引用转换成直接引用
+- 初始化：将类变量（static）初始化为正确初始值
 
 ##### 1.4 相关补充说明
 - 除了Bootstrap ClassLoader，Extension ClassLoader和Application ClassLoader以及Custom ClassLoader都继承自java.lang.ClassLoader类
@@ -30,5 +30,6 @@
 - PathClassLoader：通常用来加载已经安装的apk的dex文件（安装的apk的dex文件会存储在/data/dalvik-cache中）
 - DexClassLoader：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNjYzNDYyNiwtMTgzOTAxNTU1OV19
+eyJoaXN0b3J5IjpbLTExMjY2NzkwODAsLTE4MzkwMTU1NTldfQ
+==
 -->
