@@ -7,6 +7,7 @@
     很简单，直接在function定义之前添加一个inline关键字修饰，就可以将一个普通的function变成一个inline function了，至于函数调用也和普通函数一样
  4. 透过现象看本质：我们在第2条中阐述过inline function的特点，那么事实是否真是如此呢？我们来看代码：
 InlineTest2.kt
+
 		fun main(args: Array<String>) {  
 		    sayHello("David")  
 		}  
@@ -16,6 +17,9 @@ InlineTest2.kt
 		}
 	代码很简单，就不多说了。我们直接运行，会输出：Hi, David.下面我们进入找InlineTest2.kt对应的class文件。
 	
+	接下来我们做一件事：通过javap -c命令反编译这个InlineTest2Kt.class，会得到如下结果：
+
+我们会看到Me
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjA4ODIwMCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTI1OTk0MTAzMSwtMjA4ODc0NjYxMl19
 -->
