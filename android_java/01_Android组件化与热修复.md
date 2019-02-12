@@ -33,8 +33,9 @@
 #### 4. 初始化顺序：
 - 静态代码块和静态域初始化在clinit中的先后关系就是两者在源码中的先后关系
 - 非静态代码块和非静态域初始化在init中的先后关系就是两者在源码中的先后关系，这点是和静态代码块和静态域是一致的
+- final static域优化原理：这种优化仅仅体现在final static原生类型和String类型域（非引用类型），如果是引用类型，实际上不会得到任何优化
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMT
-I2Njc5MDgwXX0=
+eyJoaXN0b3J5IjpbLTIxMzIyMTkwNzIsLTY1Mjc4MzU5OSwxND
+M4MjQwNTE0LC0xMTI2Njc5MDgwXX0=
 -->
