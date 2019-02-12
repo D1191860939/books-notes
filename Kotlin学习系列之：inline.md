@@ -16,16 +16,16 @@ InlineTest2.kt
 		    println("Hi, $name")  
 		}
 	代码很简单，就不多说了。我们直接运行，会输出：Hi, David.下面我们进入找InlineTest2.kt对应的class文件。
-	
+	![enter image description here](https://img-blog.csdnimg.cn/2019020110215765.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 	接下来我们做一件事：通过javap -c命令反编译这个InlineTest2Kt.class，会得到如下结果：
-
+![enter image description here](https://img-blog.csdnimg.cn/20190201102245740.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 	我们会看到Method invocation。最后，我们将sayHello这个function使用inline修饰，将其变成inline function，再次build，再来反编译这个InlineTest2Kt.class，会看到如下
-
+![enter image description here](https://img-blog.csdnimg.cn/20190201102756361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 	我们可以看到，sayHello的代码会直接出现在main function中，没有我们之前看到的Method invocation。
 	至此，我们就可以证明之前的结论了。
 
 5. 我们再回过头来看这个sayHello函数，我们会看到编译器会给我们一个警告：
-    
+    ![enter image description here](https://img-blog.csdnimg.cn/20190201102828626.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 	翻译过来就是，我们将sayHello函数声明成inline是没有意义的，inline需要和接收函数类型参数的function一起使用才是最好的。为什么编译器要这么去要求呢？我们用代码去证明：这里的函数类型参数我们可以简单理解成lambda（尽管我们现在的系列还有介绍过lambda，我会在后面的系列补充）。
 	在我们的InlineTest2.kt文件中添加一个method函数：
 	
@@ -37,9 +37,9 @@ InlineTest2.kt
 			 method { }
 		}
 	method接收一个lambda表达式作为参数，然后运行程序，会打印：hello world。结果不重要，重要的是：你应该能猜到我接下来要干啥，对，将反编译贯彻到底。
-
+![enter image description here](https://img-blog.csdnimg.cn/20190201102859641.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 	可以看到，lambda表达式在字节码层面上还是创建一个匿名内部类的对象，也就是说只能语法糖，写代码时更加方便，本质上并没有什么改变。但是如果我们将method方法变成inline？
-
+![enter image description here](https://img-blog.csdnimg.cn/20190201102926523.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 
 	惊奇的发现，这个匿名内部类的对象没有了，是直接把这个"hello world"字符串嵌入到了调用处(main方法中)。这下我们就能明白编译器的用心良苦了。inline和接收函数类型参数的function才是绝配。
 
@@ -66,5 +66,6 @@ InlineTest2.kt
 
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5MDc0MjY5LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEyMTA4NjgyOSwyOTkwNzQyNjksLTIwOD
+g3NDY2MTJdfQ==
 -->
