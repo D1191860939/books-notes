@@ -29,6 +29,10 @@
 - BootClassLoader：
 - PathClassLoader：通常用来加载已经安装的apk的dex文件（安装的apk的dex文件会存储在/data/dalvik-cache中）
 - DexClassLoader：
+
+#### 4. 初始化顺序：
+- 静态代码块和静态域初始化在clinit中的先后关系就是两者在源码中的先后关系
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY2NzkwODBdfQ==
+eyJoaXN0b3J5IjpbMTQzODI0MDUxNCwtMTEyNjY3OTA4MF19
 -->
