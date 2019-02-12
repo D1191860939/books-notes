@@ -32,7 +32,9 @@
 
 #### 4. 初始化顺序：
 - 静态代码块和静态域初始化在clinit中的先后关系就是两者在源码中的先后关系
+- 非静态代码块和非静态域初始化在init中的先后关系就是两者在源码中的先后关系，这点是和静态代码块和静态域是一致的
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODI0MDUxNCwtMTEyNjY3OTA4MF19
+eyJoaXN0b3J5IjpbLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMT
+I2Njc5MDgwXX0=
 -->
