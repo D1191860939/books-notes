@@ -9,6 +9,12 @@
 	- startOtherServices()
 3. 我们仔细看一下startBootstrapServices()方法的实现：
 
+		public SystemService startService(String className) {
+			    final Class<SystemService> serviceClass;
+		        try {
+		            serviceClass = (Class<SystemService>)Class.forName(className);
+		        return startService(serviceClass);
+		    }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3ODg5NDksLTIzMDAzOTgyMF19
+eyJoaXN0b3J5IjpbMjM4Mzk1NjQyLC0yMzAwMzk4MjBdfQ==
 -->
