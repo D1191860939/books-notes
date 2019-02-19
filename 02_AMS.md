@@ -16,7 +16,19 @@
 		     return startService(serviceClass);
 		 }
 
-		
+		public <T extends SystemService> T startService(Class<T> serviceClass){
+
+	        Constructor<T> constructor = serviceClass.getConstructor(Context.class);
+	        service = constructor.newInstance(mContext);
+	        startService(service);
+	        return service;
+		}
+
+		public void startService(@NonNull final SystemService service) {
+		   mServices.add(service);
+		   service.onStart();
+		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTYyODI5MywtMjMwMDM5ODIwXX0=
+eyJoaXN0b3J5IjpbLTE1NjA5NzYxNzMsMTQzNTYyODI5MywtMj
+MwMDM5ODIwXX0=
 -->
