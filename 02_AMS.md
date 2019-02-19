@@ -7,7 +7,8 @@
 			mActivityManagerService = mSystemServiceManager.startService(ActivityManagerService.Lifecycle.class).getService();
 	- startCoreServices()
 	- startOtherServices()
-3. 
+3. 我们仔细看一下startBootstrapServices()方法的实现：
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1Njg0NjM2MSwtMjMwMDM5ODIwXX0=
+eyJoaXN0b3J5IjpbMjY3ODg5NDksLTIzMDAzOTgyMF19
 -->
