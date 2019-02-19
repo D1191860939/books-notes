@@ -3,9 +3,11 @@
 - 通过System.loadLibrary方法加载动态so库：System.loadLibrary("android_servers");
 - 启动了三类服务：
 	- startBootstrapServices()：
+			
+			mActivityManagerService = mSystemServiceManager.startService(ActivityManagerService.Lifecycle.class).getService();
 	- startCoreServices()
 	- startOtherServices()
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0ODcyMzk0LC0yMzAwMzk4MjBdfQ==
+eyJoaXN0b3J5IjpbMTc1Njg0NjM2MSwtMjMwMDM5ODIwXX0=
 -->
