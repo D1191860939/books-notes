@@ -3,18 +3,18 @@
 - 通过System.loadLibrary方法加载动态so库：System.loadLibrary("android_servers");
 - 启动了三类服务：
 	- startBootstrapServices()：
-			
-			mActivityManagerService = mSystemServiceManager.startService(ActivityManagerService.Lifecycle.class).getService();
 	- startCoreServices()
 	- startOtherServices()
 3. 我们仔细看一下startBootstrapServices()方法的实现：
 
+		mActivityManagerService = mSystemServiceManager.startService(ActivityManagerService.Lifecycle.class).getService();
+
+
 		public SystemService startService(String className) {
-			    final Class<SystemService> serviceClass;
-		        try {
-		            serviceClass = (Class<SystemService>)Class.forName(className);
-		        return startService(serviceClass);
-		    }
+			 final Class<SystemService> serviceClass;
+		     serviceClass = (Class<SystemService>)Class.forName(className);
+		     return startService(serviceClass);
+		 }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4Mzk1NjQyLC0yMzAwMzk4MjBdfQ==
+eyJoaXN0b3J5IjpbLTE2NjM4NTIyOCwtMjMwMDM5ODIwXX0=
 -->
