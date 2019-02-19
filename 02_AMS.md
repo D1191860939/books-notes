@@ -28,7 +28,23 @@
 		   mServices.add(service);
 		   service.onStart();
 		}
+5. ActivityManagerService.Lifecycle类：
+
+		public static final class Lifecycle extends SystemService {
+			private final ActivityManagerService mService;
+			 public Lifecycle(Context context) {
+				 super(context);
+				 mService = new ActivityManagerService(context);
+			 }
+			 @Override
+			 public void onStart() {
+				 mService.start();
+			 }
+			 public ActivityManagerService getService() {
+				 return mService;
+			 }
+		 }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjA5NzYxNzMsMTQzNTYyODI5MywtMj
-MwMDM5ODIwXX0=
+eyJoaXN0b3J5IjpbLTE0OTEwMDMzMzYsLTE1NjA5NzYxNzMsMT
+QzNTYyODI5MywtMjMwMDM5ODIwXX0=
 -->
