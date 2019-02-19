@@ -2,10 +2,10 @@
 2. 在SystemServer的run方法中：
 - 通过System.loadLibrary方法加载动态so库：System.loadLibrary("android_servers");
 - 启动了三类服务：
-	- startBootstrapServices()：会启动ActivityManagerService
+	- startBootstrapServices()：
 	- startCoreServices()
 	- startOtherServices()
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDAzOTgyMF19
+eyJoaXN0b3J5IjpbMjI0ODcyMzk0LC0yMzAwMzk4MjBdfQ==
 -->
