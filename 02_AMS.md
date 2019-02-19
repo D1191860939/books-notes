@@ -8,13 +8,15 @@
 3. 我们仔细看一下startBootstrapServices()方法的实现：
 
 		mActivityManagerService = mSystemServiceManager.startService(ActivityManagerService.Lifecycle.class).getService();
-
+4. SystemServiceManager.startService()方法：
 
 		public SystemService startService(String className) {
 			 final Class<SystemService> serviceClass;
 		     serviceClass = (Class<SystemService>)Class.forName(className);
 		     return startService(serviceClass);
 		 }
+
+		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjM4NTIyOCwtMjMwMDM5ODIwXX0=
+eyJoaXN0b3J5IjpbMTQzNTYyODI5MywtMjMwMDM5ODIwXX0=
 -->
