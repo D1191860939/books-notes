@@ -48,7 +48,8 @@
 6. ActivityStack：用来管理系统所有Activity的各种状态
 7. ActivityState：通过枚举定义了Activity的所有状态，在ActivityStack类的内部
 8. ActivityStackSupervisor：中有多个ActivityStack实例
-9. ActivityRecord用来记录y
+9. ActivityRecord用来记录一个Activity的所有信息；一个或多个ActivityRecord会组成一个TaskRecord，TaskRecord用来记录Activity栈；ActivityStack包含了一个或多个TaskRecord
+10. 
 
 
 
@@ -60,7 +61,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5ODU4OTYxLDQ0NDU1NTc0Niw5ODUwNj
-QyMjgsLTE1NjA5NzYxNzMsMTQzNTYyODI5MywtMjMwMDM5ODIw
-XX0=
+eyJoaXN0b3J5IjpbMjEwMDkzMTgzMSw0NDQ1NTU3NDYsOTg1MD
+Y0MjI4LC0xNTYwOTc2MTczLDE0MzU2MjgyOTMsLTIzMDAzOTgy
+MF19
 -->
