@@ -46,7 +46,8 @@
 		 }
 
 6. ActivityStack：用来管理系统所有Activity的各种状态
-7. ActivityState：通过枚举定义了
+7. ActivityState：通过枚举定义了Activity的所有状态
+8. ActivityStackSupervisor：中有多个ActivityStack实例
 
 
 
@@ -58,6 +59,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzI2Nzc5MjgsOTg1MDY0MjI4LC0xNT
-YwOTc2MTczLDE0MzU2MjgyOTMsLTIzMDAzOTgyMF19
+eyJoaXN0b3J5IjpbNDQ0NTU1NzQ2LDk4NTA2NDIyOCwtMTU2MD
+k3NjE3MywxNDM1NjI4MjkzLC0yMzAwMzk4MjBdfQ==
 -->
