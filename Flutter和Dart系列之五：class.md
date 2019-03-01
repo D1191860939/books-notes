@@ -73,7 +73,7 @@
 		      y = json['y'] {  
 		  print('fromJson...');  
 		}
-	我们可以在构造器后面添加相关参数初始化语句，并且它的执行顺序是在构造器体执行之前。
+	我们可以在构造器后面添加相关参数初始化语句，并且它的执行顺序是在构造器体执行之前。这点有点像C++。
  - 重定向构造器（Redirecting constructors）
     
 	    class Point {  
@@ -151,5 +151,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODI4NjA0OSwtMjIzNzY5MzMwXX0=
+eyJoaXN0b3J5IjpbMTIzOTU2MTQ3MywtMjIzNzY5MzMwXX0=
 -->
