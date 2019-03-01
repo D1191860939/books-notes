@@ -130,46 +130,11 @@
 		  @override  
 		  String greet(String who)  => "Hi $who. Do you know who I am?";  
 		}
-	
+- 	 当我们没有为类显式地定义构造器时，编译器会为我们声明一个默认的无参构造，在这个无参构造中它会调用父类的无参构造.
+- 构造器是不能够被继承的。
 5. 多态（Polymorphism）.多态有几个条件：有继承；子类重写父类的方法；父类型的引用指向子类型的对象。
-    多态是一个中晚绑定的行为，同一个行为对应多个实现。
-6. 抽象类和接口
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-d. 下面几个注意点是和Java类似的：
-	  i.  当我们没有为类显式地定义构造器时，编译器会为我们声明一个默认的无参构造，在这个无参构造中它会调用父类的无参构造.
-	  ii. 构造器是不能够被继承的。
-	  
-	  e. 
+    多态是一种晚绑定的行为，同一个行为对应多个实现。好，扯远了。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyNjA3NjU2LDEwMDIxMzk1MzAsLTE4NT
-I4Njc5NDgsMTIzOTU2MTQ3MywtMjIzNzY5MzMwXX0=
+eyJoaXN0b3J5IjpbLTQzMDY3ODg1OCwxMDAyMTM5NTMwLC0xOD
+UyODY3OTQ4LDEyMzk1NjE0NzMsLTIyMzc2OTMzMF19
 -->
