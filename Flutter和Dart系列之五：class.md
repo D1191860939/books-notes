@@ -111,7 +111,7 @@
 	
 4. 继承（inheritance）.
 - 使用extends关键字表示类的继承，使用implements关键字表示实现接口。
-- 
+- 使用abstract关键字表示抽象类，抽象类中的方法叫做抽象方法，只有函数声明没有实现
 
 6. 多态
 7. 抽象类和接口
@@ -151,5 +151,6 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTU2MTQ3MywtMjIzNzY5MzMwXX0=
+eyJoaXN0b3J5IjpbMTEzODYwNDAyNiwxMjM5NTYxNDczLC0yMj
+M3NjkzMzBdfQ==
 -->
