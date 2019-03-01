@@ -83,32 +83,33 @@
 	   }
 	这种方式应该很熟悉吧。
 - 工厂构造器（factory constructor）
-class Logger{  
-  final String name;  
-  bool mute = false;  
-    
-  static final Map<String, Logger> _cache = new Map<String, Logger>();  
-    
-  // 在factory constructor中是不能够访问this关键字的，换句话说，这个就是静态工厂  
-  factory Logger(String name){  
-    if(_cache.containsKey(name)) {  
-      return _cache[name];  
-    }else{  
-      final logger = Logger.internal(name);  
-      _cache[name] = logger;  
-      return logger;  
-    }  
-  }  
-    
-  Logger.internal(this.name);  
-    
-  void log(String msg){  
-    if(!mute){  
-      print(msg);  
-    }  
-  }  
-}
-4. 继承（inheritance）.使用extends关键字表示类的继承。
+
+		class Logger{  
+		  final String name;  
+		  bool mute = false;  
+		    
+		  static final Map<String, Logger> _cache = new Map<String, Logger>();  
+	    
+		  // 在factory constructor中是不能够访问this关键字的，换句话说，这个就是静态工厂  
+		  factory Logger(String name){  
+		    if(_cache.containsKey(name)) {  
+		      return _cache[name];  
+		    }else{  
+		      final logger = Logger.internal(name);  
+		      _cache[name] = logger;  
+		      return logger;  
+		    }  
+		  }  
+		    
+		  Logger.internal(this.name);  
+		    
+		  void log(String msg){  
+		    if(!mute)
+		      print(msg);   
+		  }  
+		}
+	
+4. 继承（inheritance）.使用extends关键字表示类的继承，shi'yong。
 5. 多态
 6. 抽象类和接口
 
@@ -147,5 +148,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODMyMTQ2MCwtMjIzNzY5MzMwXX0=
+eyJoaXN0b3J5IjpbLTUxMDAwMDQ5NiwtMjIzNzY5MzMwXX0=
 -->
