@@ -109,9 +109,12 @@
 		  }  
 		}
 	
-4. 继承（inheritance）.使用extends关键字表示类的继承，shi'yong。
-5. 多态
-6. 抽象类和接口
+4. 继承（inheritance）.
+- 使用extends关键字表示类的继承，使用implements关键字表示实现接口。
+- 
+
+6. 多态
+7. 抽象类和接口
 
 
 
@@ -148,5 +151,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMDAwMDQ5NiwtMjIzNzY5MzMwXX0=
+eyJoaXN0b3J5IjpbMTMxODI4NjA0OSwtMjIzNzY5MzMwXX0=
 -->
