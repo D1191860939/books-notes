@@ -4,7 +4,7 @@
 		class Point {  
 		  num x = 0, y = 1;  
 		}
-	a. 编写main方法来使用这个类：
+- 编写main方法来使用这个类：
 	   
 		void main() {  
 		  var point = Point();  //创建了一个Point类型的对象，可以加new关键字，也可以不加
@@ -16,9 +16,9 @@
 		print('${point2?.x}, ${point2?.y}'); //这里不会造成空指针异常，而是会打印null, null
 	对于成员的访问，这里说明一下：它的设计理念是和Kotlin类似的，在Java中，通常将域（Field）和它的访问器（Setter/Getter）联合起来称作是属性（Property），而在Dart和Kotlin中，属性是作为一级语言特性，完全替代了域和访问器的概念。具体的理解可以参看链接 **backing_field**
 	
-	b. 访问控制：Dart中是没有public、protected、和private关键字的。换句话说，是没有访问控制修饰符的。如果成员（属性或者是方法）是_开头，那么就表明它是在该library可见的。
+- 访问控制：Dart中是没有public、protected、和private关键字的。换句话说，是没有访问控制修饰符的。如果成员（属性或者是方法）是_开头，那么就表明它是在该library可见的。
 	
-	c. 如果得到某个对象的类型？在Object类中有个runtimeType方法，它会返回一个Type类型的对象，有点类似Class对象。
+如果得到某个对象的类型？在Object类中有个runtimeType方法，它会返回一个Type类型的对象，有点类似Class对象。
 		  
 		print("${point.runtimeType}");	// Point
 3. 构造器（Constructor).
@@ -81,7 +81,9 @@
 		  Point(this.x, this.y);  
 		  Point.alongXAxis(num x): this(x, 0);
 	   }
-	这种方式应该很熟悉吧
+	这种方式应该很熟悉吧。
+4. 继承（inheritance）.
+5. 
 
 
 
@@ -118,5 +120,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODgzNzgyM119
+eyJoaXN0b3J5IjpbMjE1MzQ3NjMzXX0=
 -->
