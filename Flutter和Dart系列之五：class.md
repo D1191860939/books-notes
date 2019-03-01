@@ -66,7 +66,7 @@
 		var point = Point.origin();  // 通过有名构造器创建Point对象
 		print('${point.x}, ${point.y}');	// 0, 0
 
-    e. 初始化列表（initializer list）
+ - 初始化列表（initializer list）
    
 	    Point.fromJson(Map<String, num> json)  
 		    : x = json['x'],  
@@ -74,7 +74,7 @@
 		  print('fromJson...');  
 		}
 	我们可以在构造器后面添加相关参数初始化语句，并且它的执行顺序是在构造器体执行之前。
-    f. 重定向构造器（Redirecting constructors）
+ - 重定向构造器（Redirecting constructors）
     
 	    class Point {  
 		  num x, y;  
@@ -120,5 +120,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MjYwMzcxOV19
+eyJoaXN0b3J5IjpbLTU0MTgxMTg1Nl19
 -->
