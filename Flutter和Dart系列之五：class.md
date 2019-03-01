@@ -83,9 +83,9 @@
 	   }
 	这种方式应该很熟悉吧。
 - 工厂构造器（factory constructor）
-4. 继承（inheritance）.
+4. 继承（inheritance）.使用extends关键字表示类的继承。
 5. 多态
-6. chou'x
+6. 抽象类和接口
 
 
 
@@ -122,5 +122,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU2MjQ0NDhdfQ==
+eyJoaXN0b3J5IjpbLTIyMzc2OTMzMF19
 -->
