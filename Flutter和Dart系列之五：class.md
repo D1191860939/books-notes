@@ -131,8 +131,9 @@
 		  String greet(String who)  => "Hi $who. Do you know who I am?";  
 		}
 	
-6. 多态（Polymorphism）.
-7. 抽象类和接口
+5. 多态（Polymorphism）.多态有几个条件：有继承；子类重写父类的方法；父类型的引用指向子类型的对象。
+    多态是一个中晚绑定的行为，同一个行为对应多个实现。
+6. 抽象类和接口
 
 
 
@@ -169,6 +170,6 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMjEzOTUzMCwtMTg1Mjg2Nzk0OCwxMj
-M5NTYxNDczLC0yMjM3NjkzMzBdfQ==
+eyJoaXN0b3J5IjpbMzcyNjA3NjU2LDEwMDIxMzk1MzAsLTE4NT
+I4Njc5NDgsMTIzOTU2MTQ3MywtMjIzNzY5MzMwXX0=
 -->
