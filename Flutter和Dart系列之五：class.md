@@ -109,7 +109,7 @@
 		  }  
 		}
 	
-4. 继承（inheritance）.
+4. 继承（Inheritance）.
 - 使用extends关键字表示类的继承，使用implements关键字表示实现接口，使用abstract关键字表示抽象类。这些都和java是类似的
 - 隐式接口（Implicit interfaces）：Dart中是没有interface这个关键字的。那么接口是怎么体现出来的呢？实际上，每个类都会隐式地定义一个接口，它包含了类的所有实例方法和类实现的接口。当你想要创建一个类A来支持另一个类B的所有API，但是不需要类B的实现时，class A就应该使用implements来实现class B。这点和Java是不同的。我们来看具体例子：
 
@@ -130,8 +130,8 @@
 		  @override  
 		  String greet(String who)  => "Hi $who. Do you know who I am?";  
 		}
-
-6. 多态
+	
+6. 多态（Polymorphism）.
 7. 抽象类和接口
 
 
@@ -169,6 +169,6 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzI5NDMyNTgsLTE4NTI4Njc5NDgsMT
-IzOTU2MTQ3MywtMjIzNzY5MzMwXX0=
+eyJoaXN0b3J5IjpbMTAwMjEzOTUzMCwtMTg1Mjg2Nzk0OCwxMj
+M5NTYxNDczLC0yMjM3NjkzMzBdfQ==
 -->
