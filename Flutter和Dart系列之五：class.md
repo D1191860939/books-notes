@@ -82,8 +82,10 @@
 		  Point.alongXAxis(num x): this(x, 0);
 	   }
 	这种方式应该很熟悉吧。
+- 工厂构造器（factory constructor）
 4. 继承（inheritance）.
-5. 
+5. 多态
+6. chou'x
 
 
 
@@ -120,5 +122,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTgxMTg1Nl19
+eyJoaXN0b3J5IjpbLTEyOTU2MjQ0NDhdfQ==
 -->
