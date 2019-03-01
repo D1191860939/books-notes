@@ -18,7 +18,7 @@
 	
 - 访问控制：Dart中是没有public、protected、和private关键字的。换句话说，是没有访问控制修饰符的。如果成员（属性或者是方法）是_开头，那么就表明它是在该library可见的。
 	
-如果得到某个对象的类型？在Object类中有个runtimeType方法，它会返回一个Type类型的对象，有点类似Class对象。
+- 如何得到某个对象的类型？在Object类中有个runtimeType方法，它会返回一个Type类型的对象，有点类似Class对象。
 		  
 		print("${point.runtimeType}");	// Point
 3. 构造器（Constructor).
@@ -31,25 +31,25 @@
 		    this.y = y;  
 		  }  
 		}
-	a. 同样使用this关键字指代当前对象。但是在Dart中除了出现这种命名冲突，建议使用this关键字，其他地方都不建议使用它
+- 同样使用this关键字指代当前对象。但是在Dart中除了出现这种命名冲突，建议使用this关键字，其他地方都不建议使用它
 	
-	b. 实际上这么写构造器有点繁琐，可以改造一下：
+- 实际上这么写构造器有点繁琐，可以改造一下：
 	
 		class Point {  
 		  num x, y;  
 		    
 		  Point(this.x, this.y);
 		}
-	c. 还记得我们在Funtion一章介绍的optional named parameters吗？和构造器联合起来使用就成了如下形式：
+- 还记得我们在系列四一节介绍的optional named parameters吗？和构造器联合起来使用就成了如下形式：
 	
 		class Point {  
 	      num x, y;  
 	  
 	      Point({this.x, this.y});  
 	   }
-	  这种方式在Flutter中很常见的。
+	 这种方式在Flutter中很常见的。
 	  
-	d. 有名构造器(Named constructors)：
+-  有名构造器(Named constructors)：
 	
 		class Point {  
 		  num x, y;  
@@ -120,5 +120,5 @@ d. 下面几个注意点是和Java类似的：
 	  
 	  e. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1MzQ3NjMzXX0=
+eyJoaXN0b3J5IjpbMTE1MjYwMzcxOV19
 -->
