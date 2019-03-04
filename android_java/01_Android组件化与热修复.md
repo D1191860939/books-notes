@@ -35,8 +35,14 @@
 - 非静态代码块和非静态域初始化在init中的先后关系就是两者在源码中的先后关系，这点是和静态代码块和静态域是一致的
 - final static域优化原理：这种优化仅仅体现在final static原生类型和String类型域（非引用类型），如果是引用类型，实际上不会得到任何优化。这种优化会体现在：
 	- sget指令（非final使用）和const/4指令（final使用）相比，它的解释要繁重的多
-- 
+	
+#### 5. 获取Class对象的几种方式：
+- 通过对象的getClass方法，这个方法是定义在Object类中的
+- 通过Class.forName()方法，需要传入一个字符串：类名的全限定名
+- 通过类的class属性
+- 对于原生数据类型而言，它们的包装类都有一个TYPE属性，来代表对应的class对象
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTIzMTQ2NCwtMjEzMjIxOTA3MiwtNj
-UyNzgzNTk5LDE0MzgyNDA1MTQsLTExMjY2NzkwODBdfQ==
+eyJoaXN0b3J5IjpbNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMz
+IyMTkwNzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2Njc5
+MDgwXX0=
 -->
