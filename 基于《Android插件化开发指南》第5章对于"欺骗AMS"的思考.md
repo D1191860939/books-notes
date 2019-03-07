@@ -187,7 +187,7 @@
 	    }
 	}	
 	
-//贴图
+//贴图![enter image description here](https://img-blog.csdnimg.cn/20190307140545818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 
 ok，这样整个欺瞒的过程也就结束了，我们已经可以实现启动未注册的Activity了，很开心。本来应该到此就结束了，但是我对源码中创建替身Intent的方式（即AMSHandler的invoke方法的实现中）有点怀疑：它是直接new了一个新的Intent对象，那么万一rawIntent中携带有相关参数呢，那么我们在目标Activity不是取不到了吗？但是转念一想，不应该，因为在newActivity方法中将它还原成rawIntent。嗯，我们来试一试，我们在启动的时候：
 
@@ -288,7 +288,7 @@ ok，这样整个欺瞒的过程也就结束了，我们已经可以实现启动
         setContentView(textView)
     }
 	
-//贴图
+//贴图![enter image description here](https://img-blog.csdnimg.cn/20190307140545818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hsaDExOTE4NjA5Mzk=,size_16,color_FFFFFF,t_70)
 
 从结果可以证实我们的想法是正确的。那么问题来了，明明我们在newActivity中对Intent进行了替换，为什么没有成功，但是NoRegisterAct却确确实实启动了的。最终在ActivityThread类找到了答案：
 
@@ -343,3 +343,6 @@ ok，这样整个欺瞒的过程也就结束了，我们已经可以实现启动
  可以看到，我们还原的rawIntent只是在创建Activity对象时起了作用，它作为一个局部变量，仅在方法体中起作用，并且没有传递到其他地方。而我们在Activity中getIntent方法返回的对象，是在performLaunchActivity方法中调用activity.attach()传入的，传入的intent还是我们的替身intent。
  
  现在，过程我们都理清楚了，所以建议：在创建替身Intent之时，使用clone的方式而不是new的方式。
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY3NjE5MTE1OF19
+-->
