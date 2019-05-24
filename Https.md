@@ -2,11 +2,12 @@
 2. 通常情况下，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信
 3. 使用公开密钥加密方式，发送密文的一方使用对方的公钥来进行加密处理，对方收到被加密的信息后，再使用自己的私钥进行解密。利用这种方式，不需要发送用来解密的私有密钥，也不必担心密钥被攻击者窃听而盗走
 4. 公开密钥加密方式和共享密钥加密相比，处理速度要慢。所以，在交换密钥环节使用公开密钥加密的方式，之后的建立通信交换报文阶段则使用共享密钥加密方式
-5. 
+5. 那么证书的作用在哪？在于无法证明密钥本身就是货真价实的公开密钥，或许在
 6. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzMwNjg4MiwtMTY5NjQwMTMxXX0=
+eyJoaXN0b3J5IjpbLTE0MjgwNjc1MzUsMTYyNzMwNjg4MiwtMT
+Y5NjQwMTMxXX0=
 -->
