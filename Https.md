@@ -1,10 +1,11 @@
 1. 在采用SSL后，HTTP就拥有了HTTPS的加密、证书和完整性保护这些功能
 2. 通常情况下，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信
 3. 使用公开密钥加密方式，发送密文的一方使用对方的公钥来进行加密处理，对方收到被加密的信息后，再使用自己的私钥进行解密。利用这种方式，不需要发送用来解密的私有密钥，也不必担心密钥被攻击者窃听而盗走
-4. 
+4. 公开密钥加密方式和共享密钥加密相比，处理速度要慢。
+5. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY0MDEzMV19
+eyJoaXN0b3J5IjpbLTE5MTM4MjM1NzIsLTE2OTY0MDEzMV19
 -->
