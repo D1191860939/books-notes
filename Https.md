@@ -5,11 +5,12 @@
 5. 那么证书的作用在哪？在于无法证明密钥本身就是货真价实的公开密钥，或许在公开密钥传输过程中，真正的公钥已经被攻击者替换掉了。
 6. 数字证书的本质：已进行数字签名的公钥
 7. 请求报文的构成=请求方法 + 请求URI + 协议版本 + 可选的请求首部字段 + 内容实体
-8. 响应报文 = 协议版本 + 
+8. 响应报文 = 协议版本 + 状态码 + 用以解释状态码的原因短语  + 可选的响应首部字段 + 实体
+9. H
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MTQ4NDc5MCwyMTE4MjgzMzEzLC0xND
+eyJoaXN0b3J5IjpbMTEzNjY4NzQwMywyMTE4MjgzMzEzLC0xND
 g5MzYxMTgyLDE2MjczMDY4ODIsLTE2OTY0MDEzMV19
 -->
