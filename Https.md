@@ -4,11 +4,12 @@
 4. 公开密钥加密方式和共享密钥加密相比，处理速度要慢。所以，在交换密钥环节使用公开密钥加密的方式，之后的建立通信交换报文阶段则使用共享密钥加密方式 
 5. 那么证书的作用在哪？在于无法证明密钥本身就是货真价实的公开密钥，或许在公开密钥传输过程中，真正的公钥已经被攻击者替换掉了。
 6. 数字证书的本质：已进行数字签名的公钥
-7. 
+7. 请求报文的构成=请求方法 + 请求URI + 协议版本 + 可选的请求首部字段 + 内容实体
+8. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExODI4MzMxMywtMTQ4OTM2MTE4MiwxNj
-I3MzA2ODgyLC0xNjk2NDAxMzFdfQ==
+eyJoaXN0b3J5IjpbNDYzODU5MTA2LDIxMTgyODMzMTMsLTE0OD
+kzNjExODIsMTYyNzMwNjg4MiwtMTY5NjQwMTMxXX0=
 -->
