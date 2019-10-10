@@ -19,9 +19,10 @@
 		     service.add();  
 		  }  
 		}
-	   如上例，  
+	  如上例，按照这种方式进行注入，UserService是可以成功注入的，这就说明@Autowired是按照类型注入，而非name。
+2. 是否允许为null：	   
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk3MTk4NTMwLDEyOTAwMjQwODUsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEzNDY0ODI3NTEsMTI5MDAyNDA4NSwtMj
+A4ODc0NjYxMl19
 -->
