@@ -50,15 +50,14 @@
 		public class UserService {  
 		  
 		 @Autowired  
-		//    @Qualifier(value = "jdbcRepositoryImpl")  
 		  private UserRepository userRepository;  
 		 
 		  public void add(){  
-		      System.out.println("UserService add...");  
-		        userRepository.save();  
-		    }  
+		    System.out.println("UserService add...");  
+		    userRepository.save();  
+		  }  
 		}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTQzNzc4MCwxMjkwMDI0MDg1LC0yMD
+eyJoaXN0b3J5IjpbMTgzNTA1OTAzOCwxMjkwMDI0MDg1LC0yMD
 g4NzQ2NjEyXX0=
 -->
