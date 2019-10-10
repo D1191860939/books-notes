@@ -50,14 +50,15 @@
 		public class UserService {  
 		  
 		 @Autowired  
-		  private UserRepository userRepository;  
+		 private UserRepository userRepository;  
 		 
 		  public void add(){  
 		    System.out.println("UserService add...");  
 		    userRepository.save();  
 		  }  
 		}
+	按照上面这种写法
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNTA1OTAzOCwxMjkwMDI0MDg1LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNzg3NTk0MjMyLDEyOTAwMjQwODUsLTIwOD
+g3NDY2MTJdfQ==
 -->
