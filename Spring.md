@@ -66,8 +66,9 @@
 5. 除了Field Injection之外，还可以通过Constructor-Injection以及Setter-Injection的方式来进行注入，我们同样可以将@Autowired注解在constructor以及setter上使用。但是自从Spring4.3之后，可以将constructor以及setter上的@Autowired注解省略，但是不影响效果
 6. byName和byType
 - byName：通过参数名进行装配，如果一个bean的name和另一个bean的property相同，则自动装配
-- byType：通过参数的数据类型自动装配，如果一个bean的数据类型和另一个bean的property
+- byType：通过参数的数据类型自动装配，如果一个bean的数据类型和另一个bean的property属性的数据类型兼容，就自动装配。
+7. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTEzMzE1MTgsMTkyMDI2MzkwNiwxMj
+eyJoaXN0b3J5IjpbLTE0MTQ4NTQxNjQsMTkyMDI2MzkwNiwxMj
 kwMDI0MDg1LC0yMDg4NzQ2NjEyXX0=
 -->
