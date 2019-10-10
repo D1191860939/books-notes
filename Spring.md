@@ -64,8 +64,9 @@
 	那么此时注入的就是JdbcRepositoryImpl。
 4. @Qualifier：除了第3条中阐明的方式之外，我们还可以借助于@Qualifier注解，在其中显式指定注入的bean的name，来达到同样的效果。
 5. 除了Field Injection之外，还可以通过Constructor-Injection以及Setter-Injection的方式来进行注入，我们同样可以将@Autowired注解在constructor以及setter上使用。但是自从Spring4.3之后，可以将constructor以及setter上的@Autowired注解省略，但是不影响效果
-6. 
+6. byName和byType
+- byName：通过参数名进行装配，如果一个bean的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDI2MzkwNiwxMjkwMDI0MDg1LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEyNTU4NzI5NjUsMTkyMDI2MzkwNiwxMj
+kwMDI0MDg1LC0yMDg4NzQ2NjEyXX0=
 -->
