@@ -20,9 +20,9 @@
 		  }  
 		}
 	  如上例，按照这种方式进行注入，UserService是可以成功注入的，这就说明@Autowired是按照类型注入，而非name。
-2. 是否允许为null：	   
+2. 是否允许为null：如果在进行注入时，允许为null，在这种情况下可以通过@Autowired(required = false)来指定。默认情况下 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY0ODI3NTEsMTI5MDAyNDA4NSwtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTgxOTY4Njk3MCwxMjkwMDI0MDg1LC0yMD
+g4NzQ2NjEyXX0=
 -->
