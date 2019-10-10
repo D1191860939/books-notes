@@ -62,8 +62,9 @@
 		@Autowired  
 		private UserRepository jdbcRepositoryImpl;
 	那么此时注入的就是JdbcRepositoryImpl。
-4. @Qualifier：除了第3条中阐明的方式之外，我们还可以借助于@Qualifier注解，
+4. @Qualifier：除了第3条中阐明的方式之外，我们还可以借助于@Qualifier注解，在其中显式指定注入的bean的name，来达到同样的效果。
+5. 除了Field Injection之外，还可以通过Constructor-Injection以及Setter- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMTUwNzMxMSwxMjkwMDI0MDg1LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNzQ5NTMzMTIzLDEyOTAwMjQwODUsLTIwOD
+g3NDY2MTJdfQ==
 -->
