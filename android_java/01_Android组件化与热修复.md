@@ -41,8 +41,14 @@
 - 通过Class.forName()方法，需要传入一个字符串：类名的全限定名
 - 通过类的class属性
 - 对于原生数据类型而言，它们的包装类都有一个TYPE属性，来代表对应的class对象
+
+#### 6. 可以作为GC Roots的对象
+- 虚拟机栈中引用的对象
+- 方法区中类静态属性引用的对象
+- 方法区中常量引用的对象
+- 本地方法栈（即一般说的native方法）中引用的对象
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMz
-IyMTkwNzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2Njc5
-MDgwXX0=
+eyJoaXN0b3J5IjpbLTE4NjQ3NTkzNSw2NDY5NjA4MDMsLTQwMT
+IzMTQ2NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LDE0MzgyNDA1
+MTQsLTExMjY2NzkwODBdfQ==
 -->
