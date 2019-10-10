@@ -57,8 +57,8 @@
 		    userRepository.save();  
 		  }  
 		}
-	按照上面这种写法
+	按照上面这种写法，如果按照第1条中的准则，默认按照类型进行装配，则在这里就 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3NTk0MjMyLDEyOTAwMjQwODUsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMjAwNTg0MTg4MCwxMjkwMDI0MDg1LC0yMD
+g4NzQ2NjEyXX0=
 -->
