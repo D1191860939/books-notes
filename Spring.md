@@ -22,11 +22,30 @@
 	  如上例，按照这种方式进行注入，UserService是可以成功注入的，这就说明@Autowired是按照类型注入，而非name。
 2. 是否允许为null：如果在进行注入时，允许为null，在这种情况下可以通过@Autowired(required = false)来指定。默认情况下required=true
 3. 当依赖的类型出现多个时候：
+
 		public interface UserRepository {  
 		    void save();  
 		}
+		
+		@Repository  
+		public class JdbcRepositoryImpl implements UserRepository {  
+		  
+		  @Override  
+		  public void save() {  
+		     System.out.println("jdbc repository saved...");  
+		  }  
+		}
+		
+		@Repository("userRepository")  
+		public class UserRepositoryImpl implements UserRepository {  
+		  
+		  @Override  
+		  public void save() {  
+		     System.out.println("UserRepositoryImpl save...");  
+		  }  
+		}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzg3ODQyNCwxMjkwMDI0MDg1LC0yMD
+eyJoaXN0b3J5IjpbLTg1MjExMjg0MCwxMjkwMDI0MDg1LC0yMD
 g4NzQ2NjEyXX0=
 -->
