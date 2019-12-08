@@ -60,10 +60,12 @@
 
 #### 9. 所有的Java虚拟机实现都必须在每个类或接口被Java程序“首次主动使用”时才初始化他们
 
-#### 10. 
+#### 10. 主动使用：
+- 创建类的实例
+- 访问某个类或接口的静态变量，或者对该静态变量赋值
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0NTkxNTU4LDEyMzQ1MzYwNjcsLTE4Nj
-Q3NTkzNSw2NDY5NjA4MDMsLTQwMTIzMTQ2NCwtMjEzMjIxOTA3
-MiwtNjUyNzgzNTk5LDE0MzgyNDA1MTQsLTExMjY2NzkwODBdfQ
-==
+eyJoaXN0b3J5IjpbOTkxMTc2OTE3LDI4NDU5MTU1OCwxMjM0NT
+M2MDY3LC0xODY0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQs
+LTIxMzIyMTkwNzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMT
+I2Njc5MDgwXX0=
 -->
