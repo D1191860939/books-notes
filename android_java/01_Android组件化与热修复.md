@@ -11,7 +11,7 @@
 - 加载：查找并加载Class文件，然后保存到方法区，并且在Java堆内存中会创建一个Class对象来代表这个.class文件
 - 链接：验证、准备以及解析
 > 验证：确保被导入类型的正确性
-> 准备：为类的静态字段分配字段
+> 准备：为类的静态字段分配内存，并将其初始化为默认值
 > 解析：根据运行时常量池的符号引用来动态决定具体执行过程，符号引用转换成直接引用
 - 初始化：将类变量（static）初始化为正确初始值
 
@@ -51,9 +51,10 @@
 #### 7. Java虚拟机在以下情况下将结束生命周期：
 - 执行了System.exit()方法
 - 程序正常执行退出
-- 程序在执行过程中遇到了异常或错误而一行
+- 程序在执行过程中遇到了异常或错误而异常终止
+- 由于操作系统错误而导致Java虚拟机进程终止
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODYzNjIxNiwtMTg2NDc1OTM1LDY0Nj
+eyJoaXN0b3J5IjpbMTIzNDUzNjA2NywtMTg2NDc1OTM1LDY0Nj
 k2MDgwMywtNDAxMjMxNDY0LC0yMTMyMjE5MDcyLC02NTI3ODM1
 OTksMTQzODI0MDUxNCwtMTEyNjY3OTA4MF19
 -->
