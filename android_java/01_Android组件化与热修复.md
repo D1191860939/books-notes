@@ -68,11 +68,61 @@
 - 初始化一个类的子类
 - Java虚拟机启动时被标明为启动类的类	（包含main方法）
 - jdk1.7之后，java提供动态语言的支持
-#### 11.对于静态字段来说，只有直接定义了该字段的类才会被初始化
+#### 11.
+  
+/**  
+ * 一、所有的jvm实现都必须在每个类或接口被java程序“首次主动使用”时才初始化他们  
+  * 二、触发首次主动使用：  
+  * 1. 创建一个类的实例  
+  * 2. 访问一个类的静态字段，或者给该静态字段赋值  
+  * 3. 调用类的静态方法  
+  * 4. 发射  
+  * 5. 初始化一个类的子类  
+  * 6. jvm启动时被标明为启动类的类 main方法所在的类  
+  *  
+ * 该程序所说明的问题：  
+  * 1. 初始化一个类的子类会触发该类被初始化，如这里的Animal类，我们在触发其子类Dog的初始化时，会导致Animal类自身初始化。换句话说，  
+  * 当一个类被初始化时，要求其父类全部都已经初始化完毕  
+  * 2. 对于静态字段来说，只有直接定义了该字段的类才会被初始化  
+  * 3. 同时也再次强调了静态代码块的作用：在类被初始化时为类的静态字段赋值。换句话说，当一个类被初始化时，会触发该类的静态代码块的调用  
+  *  
+ * 以上所说明的点都是在类加载子系统的第三阶段所完成的。这三个阶段分别是：  
+  * 1. 加载：将class文件读取载入内存  
+  * 2. 连接  
+  * - 验证： 验证所导入类的正确性，这个要是拓展的话，就是class文件本身的格式  
+  * - 准备： 为类的静态字段分配内存，并初始化为默认值  
+  * - 解析： 根据运行时常量池的符号引用来动态决定具体执行过程，将符号引用转换成直接引用  
+  * 3. 初始化  
+  */  
+  
+public class MyTest1 {  
+  
+    public static void main(String[] args) {  
+        System.out.println(Dog.color);  
+    }  
+}  
+  
+class Animal{  
+  
+    public static String name = "animal";  
+  
+    static {  
+        System.out.println("in Animal's static block.");  
+    }  
+}  
+  
+class Dog extends Animal{  
+  
+    public static String color = "white";  
+  
+    static {  
+        System.out.println("in Dog's static block.");  
+    }  
+}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI5MDEwMDEsLTEyMDQ2NTA5NzgsNT
-EwMDQzNjQwLC0xOTQ0Njg1MjQ5LDI4NDU5MTU1OCwxMjM0NTM2
-MDY3LC0xODY0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQsLT
-IxMzIyMTkwNzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2
-Njc5MDgwXX0=
+eyJoaXN0b3J5IjpbLTgxMDY2MzMzOCwtMTE5MjkwMTAwMSwtMT
+IwNDY1MDk3OCw1MTAwNDM2NDAsLTE5NDQ2ODUyNDksMjg0NTkx
+NTU4LDEyMzQ1MzYwNjcsLTE4NjQ3NTkzNSw2NDY5NjA4MDMsLT
+QwMTIzMTQ2NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LDE0Mzgy
+NDA1MTQsLTExMjY2NzkwODBdfQ==
 -->
