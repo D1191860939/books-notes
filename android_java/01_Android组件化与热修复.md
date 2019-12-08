@@ -67,9 +67,9 @@
 -  反射，如Class.forName("");
 - 初始化一个类的子类
 - Java虚拟机启动时被标明为启动类的类	（包含main方法）
-- jdk1.7之后，jav提供动态语言的支持
+- jdk1.7之后，java提供动态语言的支持
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM4OTg3MjcsNTEwMDQzNjQwLC0xOT
+eyJoaXN0b3J5IjpbLTEyMDQ2NTA5NzgsNTEwMDQzNjQwLC0xOT
 Q0Njg1MjQ5LDI4NDU5MTU1OCwxMjM0NTM2MDY3LC0xODY0NzU5
 MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMzIyMTkwNzIsLT
 Y1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2Njc5MDgwXX0=
