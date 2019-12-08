@@ -62,10 +62,12 @@
 
 #### 10. 主动使用：
 - 创建类的实例
-- 访问某个类或接口的静态变量，或者对该静态变量赋值
+- 访问某个类或接口的静态变量，或者对该静态变量赋值（对于静态变量的set、get）
+- 调用类的静态方法
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxMTc2OTE3LDI4NDU5MTU1OCwxMjM0NT
-M2MDY3LC0xODY0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQs
-LTIxMzIyMTkwNzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMT
-I2Njc5MDgwXX0=
+eyJoaXN0b3J5IjpbLTE5NDQ2ODUyNDksMjg0NTkxNTU4LDEyMz
+Q1MzYwNjcsLTE4NjQ3NTkzNSw2NDY5NjA4MDMsLTQwMTIzMTQ2
+NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LDE0MzgyNDA1MTQsLT
+ExMjY2NzkwODBdfQ==
 -->
