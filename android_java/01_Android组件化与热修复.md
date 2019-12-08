@@ -66,11 +66,11 @@
 - 调用类的静态方法
 -  反射，如Class.forName("");
 - 初始化一个类的子类
-- 
-- 
+- Java虚拟机启动时被标明为启动类的类	（包含main方法）
+- jdk1.7之后，java
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTYzMzY1NjcsLTE5NDQ2ODUyNDksMj
-g0NTkxNTU4LDEyMzQ1MzYwNjcsLTE4NjQ3NTkzNSw2NDY5NjA4
-MDMsLTQwMTIzMTQ2NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LD
-E0MzgyNDA1MTQsLTExMjY2NzkwODBdfQ==
+eyJoaXN0b3J5IjpbLTQ1OTM2NDk3MCwtMTk0NDY4NTI0OSwyOD
+Q1OTE1NTgsMTIzNDUzNjA2NywtMTg2NDc1OTM1LDY0Njk2MDgw
+MywtNDAxMjMxNDY0LC0yMTMyMjE5MDcyLC02NTI3ODM1OTksMT
+QzODI0MDUxNCwtMTEyNjY3OTA4MF19
 -->
