@@ -57,9 +57,13 @@
 #### 8. Java程序对于类的使用分为两种方式
 - 主动使用
 -  被动使用
+
+#### 9. 所有的Java虚拟机实现都必须在每个类或接口被Java程序“首次主动使用”时才初始化他们
+
+#### 10. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzYwNTkxMywxMjM0NTM2MDY3LC0xOD
-Y0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMzIyMTkw
-NzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2Njc5MDgwXX
-0=
+eyJoaXN0b3J5IjpbMjg0NTkxNTU4LDEyMzQ1MzYwNjcsLTE4Nj
+Q3NTkzNSw2NDY5NjA4MDMsLTQwMTIzMTQ2NCwtMjEzMjIxOTA3
+MiwtNjUyNzgzNTk5LDE0MzgyNDA1MTQsLTExMjY2NzkwODBdfQ
+==
 -->
