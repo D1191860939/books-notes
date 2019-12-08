@@ -53,8 +53,13 @@
 - 程序正常执行退出
 - 程序在执行过程中遇到了异常或错误而异常终止
 - 由于操作系统错误而导致Java虚拟机进程终止
+
+#### 8. Java程序对于类的使用分为两种方式
+- 主动使用
+-  被动使用
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDUzNjA2NywtMTg2NDc1OTM1LDY0Nj
-k2MDgwMywtNDAxMjMxNDY0LC0yMTMyMjE5MDcyLC02NTI3ODM1
-OTksMTQzODI0MDUxNCwtMTEyNjY3OTA4MF19
+eyJoaXN0b3J5IjpbMjAzMzYwNTkxMywxMjM0NTM2MDY3LC0xOD
+Y0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMzIyMTkw
+NzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2Njc5MDgwXX
+0=
 -->
