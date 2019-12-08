@@ -64,10 +64,13 @@
 - 创建类的实例
 - 访问某个类或接口的静态变量，或者对该静态变量赋值（对于静态变量的set、get）
 - 调用类的静态方法
+-  反射，如Class.forName("");
+- 初始化一个类的子类
+- 
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQ2ODUyNDksMjg0NTkxNTU4LDEyMz
-Q1MzYwNjcsLTE4NjQ3NTkzNSw2NDY5NjA4MDMsLTQwMTIzMTQ2
-NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LDE0MzgyNDA1MTQsLT
-ExMjY2NzkwODBdfQ==
+eyJoaXN0b3J5IjpbLTExOTYzMzY1NjcsLTE5NDQ2ODUyNDksMj
+g0NTkxNTU4LDEyMzQ1MzYwNjcsLTE4NjQ3NTkzNSw2NDY5NjA4
+MDMsLTQwMTIzMTQ2NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LD
+E0MzgyNDA1MTQsLTExMjY2NzkwODBdfQ==
 -->
