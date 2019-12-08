@@ -47,8 +47,13 @@
 - 方法区中类静态属性引用的对象
 - 方法区中常量引用的对象
 - 本地方法栈（即一般说的native方法）中引用的对象
+
+#### 7. Java虚拟机在以下情况下将结束生命周期：
+- 执行了System.exit()方法
+- 程序正常执行退出
+- 程序在执行过程中遇到了异常或错误而一行
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ3NTkzNSw2NDY5NjA4MDMsLTQwMT
-IzMTQ2NCwtMjEzMjIxOTA3MiwtNjUyNzgzNTk5LDE0MzgyNDA1
-MTQsLTExMjY2NzkwODBdfQ==
+eyJoaXN0b3J5IjpbLTQzODYzNjIxNiwtMTg2NDc1OTM1LDY0Nj
+k2MDgwMywtNDAxMjMxNDY0LC0yMTMyMjE5MDcyLC02NTI3ODM1
+OTksMTQzODI0MDUxNCwtMTEyNjY3OTA4MF19
 -->
