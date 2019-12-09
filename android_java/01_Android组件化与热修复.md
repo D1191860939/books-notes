@@ -121,9 +121,9 @@ class Dog extends Animal{
 }
 
 ####12. -XX:+TraceClassLoading, 用于追踪类的加载信息并打印 
-
+通过该虚拟机参数：我们可以知道，当通过Dog类来访问name属性时（Dog.name），此时会触发Dog的加载，但是不会导致Dog类的初始化，只会触发Animal的初始化，即
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDU2NzA2NiwxODg1MTQzNzg4LC04MT
+eyJoaXN0b3J5IjpbMTMzODgyOTcwNiwxODg1MTQzNzg4LC04MT
 A2NjMzMzgsLTExOTI5MDEwMDEsLTEyMDQ2NTA5NzgsNTEwMDQz
 NjQwLC0xOTQ0Njg1MjQ5LDI4NDU5MTU1OCwxMjM0NTM2MDY3LC
 0xODY0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMzIy
