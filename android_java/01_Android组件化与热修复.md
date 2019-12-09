@@ -120,9 +120,9 @@ class Dog extends Animal{
     }  
 }
 
-####12. -XX:+TraceClassLoading, 用于追踪类的  
+####12. -XX:+TraceClassLoading, 用于追踪类的加载信息并打印 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODgxNzYwNCwtODEwNjYzMzM4LC0xMT
+eyJoaXN0b3J5IjpbMTg4NTE0Mzc4OCwtODEwNjYzMzM4LC0xMT
 kyOTAxMDAxLC0xMjA0NjUwOTc4LDUxMDA0MzY0MCwtMTk0NDY4
 NTI0OSwyODQ1OTE1NTgsMTIzNDUzNjA2NywtMTg2NDc1OTM1LD
 Y0Njk2MDgwMywtNDAxMjMxNDY0LC0yMTMyMjE5MDcyLC02NTI3
