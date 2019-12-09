@@ -121,12 +121,12 @@ class Dog extends Animal{
 }
 
 ####12. -XX:+TraceClassLoading, 用于追踪类的加载信息并打印 
-通过该虚拟机参数：我们可以知道，当通过Dog类来访问name属性时（Dog.name），此时会触发Dog的加载，但是不会导致Dog类的初始化，只会触发Animal的初始化，即
+通过该虚拟机参数：我们可以知道，当通过Dog类来访问name属性时（Dog.name），此时会触发Dog的加载，但是不会导致Dog类的初始化，只会触发Animal的初始化，即对于静态字段而言，只有直接定义该字段的类才会被初始化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODgyOTcwNiwxODg1MTQzNzg4LC04MT
-A2NjMzMzgsLTExOTI5MDEwMDEsLTEyMDQ2NTA5NzgsNTEwMDQz
-NjQwLC0xOTQ0Njg1MjQ5LDI4NDU5MTU1OCwxMjM0NTM2MDY3LC
-0xODY0NzU5MzUsNjQ2OTYwODAzLC00MDEyMzE0NjQsLTIxMzIy
-MTkwNzIsLTY1Mjc4MzU5OSwxNDM4MjQwNTE0LC0xMTI2Njc5MD
-gwXX0=
+eyJoaXN0b3J5IjpbLTEwNTQyNDA1MTAsMTg4NTE0Mzc4OCwtOD
+EwNjYzMzM4LC0xMTkyOTAxMDAxLC0xMjA0NjUwOTc4LDUxMDA0
+MzY0MCwtMTk0NDY4NTI0OSwyODQ1OTE1NTgsMTIzNDUzNjA2Ny
+wtMTg2NDc1OTM1LDY0Njk2MDgwMywtNDAxMjMxNDY0LC0yMTMy
+MjE5MDcyLC02NTI3ODM1OTksMTQzODI0MDUxNCwtMTEyNjY3OT
+A4MF19
 -->
