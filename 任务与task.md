@@ -42,7 +42,7 @@ Android Framework层
 1.事件机制
 2.消息机制
 3.PMS
-4. AMS
+4.AMS
 ....
 
 音视频开发
@@ -52,6 +52,6 @@ Android Framework层
 9. 圣思园Netty
 10. 尚硅谷Netty
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMjEwNDMxMywtMTIwMTAxMDc5MywtNT
-E0MjE2MDMxXX0=
+eyJoaXN0b3J5IjpbNTk5NTA5NTgzLDE4MDIxMDQzMTMsLTEyMD
+EwMTA3OTMsLTUxNDIxNjAzMV19
 -->
