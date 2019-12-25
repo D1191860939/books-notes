@@ -36,16 +36,22 @@ Java8
 2. leakcanary
 3. 
 
+
+
 Android Framework层
-14. PMS
+1.事件机制
+2.消息机制
+3.PMS
+4. AMS
 ....
 
 音视频开发
-15. Android音视频开发指南
+8. Android音视频开发指南
 
 并发与NIO
-16. 圣思园Netty
-27. 尚硅谷Netty
+9. 圣思园Netty
+10. 尚硅谷Netty
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDEwMTA3OTMsLTUxNDIxNjAzMV19
+eyJoaXN0b3J5IjpbMTgwMjEwNDMxMywtMTIwMTAxMDc5MywtNT
+E0MjE2MDMxXX0=
 -->
