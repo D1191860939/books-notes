@@ -91,7 +91,7 @@
     
 -   git diff HEAD：比较的是最新的提交与工作区之间的差别
     
--   git diff --cached：比较的是版本库与工作区之间的差别
+-   git diff --cached：比较的是版本库与暂存区之间的差别
 
 13. pull = fetch + merge
 14. 
