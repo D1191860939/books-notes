@@ -48,9 +48,9 @@
 8.  丢弃修改：
     
 
--   git checkout -- <file>：此时checkout的含义是为了丢弃工作区的修改，使之同之前暂存区的状态一致（丢弃掉相对于）
+-   git checkout -- <file>：此时checkout的含义是为了丢弃工作区的修改，使之同之前暂存区的状态一致（丢弃掉相对于），相当于用暂存区的内容来覆盖工作区
     
--   git reset HEAD <file>：丢弃暂存区的修改，使之挪动到工作区
+-   git reset HEAD <file>：丢弃暂存区的修改，使之挪动到工作区，即将版本库中的内容来覆盖暂存区
     
 
 总结起来而言：如果某个文件的改动已经提交到暂存区，此时要想将文件状态恢复到上一次commit提交状态，那么我们需要两步操作：
@@ -71,7 +71,7 @@
 10.  分支重命名：git branch -m <oldBranchName>  <newBranchName>
     
 11.  git stash
-    
+
 
 -   pop/apply：类似于stack的pop和peek操作
     
@@ -83,7 +83,7 @@
     
 
 12.  git diff
-    
+
 
 -   直接 git diff：比较的是工作区与暂存区的内容，源文件是暂存区，目标文件是工作区
     
