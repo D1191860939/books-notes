@@ -94,7 +94,8 @@
 -   git diff --cached：比较的是版本库与暂存区之间的差别
 
 13. pull = fetch + merge
-14. 
+14. git show <commit_id>：查看某个提交的内容
+15. git log --grep=word：根据提交信息来查找特定commit
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTgyNTQ3MjA0NF19
 -->
